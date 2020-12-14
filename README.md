@@ -29,19 +29,19 @@ This opens a TomCat window, which is your local host of SolrWayback. It also run
 
 These windows has to remain open in order for SolrWayback to work.
 
-#Index
+# Index
 In order to index warc files TomCat has to be active. 
 When you select multiple warc files, it will index the files one by one. This can take a while depeding on the size of the files.
 After indexing SolrSetup will restart both local hosts and you will experience TomCat and CMD windows open and close. 
 You will have one TomCat window open in the end and one CMD. Keep these running (do not close down) in order for SolrWayback to work. 
 
-#Clearing indexing
+# Clearing indexing
 If press "Clear index" it will delete all of your previous indexed files. 
 
-#Shutdown
+# Shutdown
 If you shutdown SolrSetup by press the "X" (top right) it will also shutdown your localhosts. Please close only when done using SolrWayback. 
 It will not clear any indexed files. 
 
-#Other
+# Other
 If you experience launch problems or difficulties, please try to restart the application. 
 There are bugs in the application, sorry but its not made by professionals. 
