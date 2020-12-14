@@ -1,9 +1,14 @@
 # SolrSetup
 Download the AddOn for SolrWayback here: https://github.com/MadsGreen/SolrSetup/releases/tag/SolrSetup_1.0
+If you dont want to build the AddOn youself, download the Addon above and extract it in your SolrWayback_package_X.X.X folder like this:
+
+![Screenshot](https://i.imgur.com/cqeX8KE.png)
 
 This is an AddOn to SolrWayback https://github.com/netarchivesuite/solrwayback
 SolrSetup is an GUI for the SolrWayback install guide. This is done to ease the install of SolrWayback. 
 All cmd commands for the installation and setup are automated. 
+
+
 
 # Build
 To build the AddOn you need Visual Studio 19 or newer. 
