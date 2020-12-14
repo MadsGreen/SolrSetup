@@ -1,5 +1,6 @@
 # SolrSetup
 Download the AddOn for SolrWayback here: https://github.com/MadsGreen/SolrSetup/releases/tag/SolrSetup_1.0
+
 If you dont want to build the AddOn youself, download the Addon above and extract it in your SolrWayback_package_X.X.X folder like this:
 
 ![Screenshot](https://i.imgur.com/cqeX8KE.png)
