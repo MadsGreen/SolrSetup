@@ -1,4 +1,6 @@
 # SolrSetup
+Download the release package here: https://github.com/MadsGreen/SolrSetup/releases/tag/SolrSetup_1.0
+
 This is an AddOn to SolrWayback https://github.com/netarchivesuite/solrwayback
 SolrSetup is an GUI for the SolrWayback install guide. This is done to ease the install of SolrWayback. 
 All cmd commands for the installation and setup are automated. 
