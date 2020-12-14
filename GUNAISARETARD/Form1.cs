@@ -422,7 +422,7 @@ If you want to remove your indexed files and start from scratch, press “Clear 
             DialogResult dialogResult1 = MessageBox.Show("If you close SolrSetup it will also close SolrWayback. Are you sure you what to Close? ", "Shutting down", MessageBoxButtons.YesNo);
             if (dialogResult1 == DialogResult.Yes)
             {
-                Cursor.Current = Cursors.WaitCursor;
+            Cursor.Current = Cursors.WaitCursor;
             //Preparing process to run cmd commands
             System.Diagnostics.Process process = new System.Diagnostics.Process();
             System.Diagnostics.ProcessStartInfo startInfo = new System.Diagnostics.ProcessStartInfo();
