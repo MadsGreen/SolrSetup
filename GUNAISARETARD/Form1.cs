@@ -419,7 +419,10 @@ If you want to remove your indexed files and start from scratch, press “Clear 
 
             private void EXIT_Click(object sender, EventArgs e)
         {
-            Cursor.Current = Cursors.WaitCursor;
+            DialogResult dialogResult1 = MessageBox.Show("If you close SolrSetup it will also close SolrWayback. Are you sure you what to Close? ", "Shutting down", MessageBoxButtons.YesNo);
+            if (dialogResult1 == DialogResult.Yes)
+            {
+                Cursor.Current = Cursors.WaitCursor;
             //Preparing process to run cmd commands
             System.Diagnostics.Process process = new System.Diagnostics.Process();
             System.Diagnostics.ProcessStartInfo startInfo = new System.Diagnostics.ProcessStartInfo();
@@ -454,14 +457,19 @@ If you want to remove your indexed files and start from scratch, press “Clear 
 
 
             //SHUTSDOWN TOMCAT
-            string tomcatshutdown = tomcatpath + @"\bin\Shutdown.bat";
-            tomcatshutdown.ToString();
-            startInfo.Arguments = "/C call " + "\"" + tomcatshutdown + "\"";
-            process.StartInfo = startInfo;
-            process.Start();
-            process.WaitForExit();
-            Application.Exit();
-
+                string tomcatshutdown = tomcatpath + @"\bin\Shutdown.bat";
+                tomcatshutdown.ToString();
+                startInfo.Arguments = "/C call " + "\"" + tomcatshutdown + "\"";
+                process.StartInfo = startInfo;
+                process.Start();
+                process.WaitForExit();
+                Application.Exit();
+            }
+            //If user regrets pressing "clear indexing" nothing happens and the user do not delete anything
+            else if (dialogResult1 == DialogResult.No)
+            {
+                //DOES NOTHING - RETURNING TO
+            }
 
         }
 
