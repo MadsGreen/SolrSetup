@@ -29,13 +29,16 @@ To build the AddOn you need Visual Studio 19 or newer.
 
 # Install
 To install SolrWayback run the SolrSetup.exe and press "Install"
-This copies the files of the propertyfolder into your user folder and creats Java_HOME, JAVA_JRE & CATALINA_HOME enviroment variables.
+This copies the files of the propertyfolder into your user folder and creates Java_HOME, JAVA_JRE & CATALINA_HOME enviroment variables.
+- The application looks for you java folder in C:\\, if you have java install else where you'll might have some issues. 
+FYI after the insallation the application shutsdown, in order for it to work properly work. Just open reopen igen after complete installation.
 
 # Start SolrWayback 
 To start up SolrWayback, press the power icon in the middle of the UI cirkel. 
 This opens a TomCat window, which is your local host of SolrWayback. It also run a hidden cmd localhost which is your netarchive localhost.
+The application creates a new/updates the CATALINA_HOME envrionmentvariable each time you run the program. If you move your SolrWayback_package folder, the proper environmentvarible is set. You'll might get an error the first time you start the application after moving the folder, but just restart it and it should work.
 
-These windows has to remain open in order for SolrWayback to work.
+The pop-up window(s) has to remain open in order for SolrWayback to work.
 
 # Index
 In order to index warc files TomCat has to be active. 
